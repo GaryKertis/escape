@@ -2,7 +2,8 @@
 #define CHARACTER_H
 #include <SFML/Graphics.hpp>
 #include "constants.h"
-#include <iostream>
+#include "helper.h"
+#include <vector>
 #include <cmath>
 
 using sf::Vector2f;
@@ -10,6 +11,7 @@ using sf::Vertex;
 using sf::VertexArray;
 using sf::Triangles;
 using sf::Color;
+using std::vector;
 
 
 class Character : public sf::Drawable, public sf::Transformable {

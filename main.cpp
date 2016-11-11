@@ -13,6 +13,11 @@ int main()
 
 	window.setFramerateLimit(60); // call it once, after creating the window
 	float i = 0;
+
+	sf::CircleShape circle(50, 60);
+	circle.setFillColor(AQUA);
+	circle.setPosition(100, 100);
+
 	while (window.isOpen())
 	{
 		i += 0.01;
@@ -26,6 +31,7 @@ int main()
 
 		window.clear(sf::Color::White);
 		window.draw(character);
+		window.draw(circle);
 
 		window.display();
 	}
