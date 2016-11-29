@@ -1,11 +1,13 @@
 #include <SFML/Graphics.hpp>
 #include "constants.h"
 #include "character.h"
+#include "gnome.h"
 
 int main()
 {
 	srand(time(0));
 	Character character(300, 300, 100);
+	Gnome gnome(200, 200, 100);
 	sf::ContextSettings settings;
 	settings.antialiasingLevel = 8;
 	// create the window
@@ -32,6 +34,8 @@ int main()
 		window.clear(sf::Color::White);
 		window.draw(character);
 		window.draw(circle);
+		//gnome.move(1, 0);
+		gnome.draw(window);
 
 		window.display();
 	}

@@ -29,9 +29,7 @@ void Character::createBody(float x, float y) {
 		100.0,
 		AQUA
 	};
-
 	vector<Vertex> result = Helper::createSquare(square);
-
 	for (auto & point : result) {
 		vertices.append(point);
 	}
